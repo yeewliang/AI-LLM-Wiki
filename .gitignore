@@ -2,3 +2,13 @@
 .obsidian/cache
 .DS_Store
 *.tmp
+
+# Claude Code local overrides & credentials
+.claude/settings.local.json
+.claude/.credentials*
+
+# Secrets
+.env
+.env.*
+*.key
+*.pem
