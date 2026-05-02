@@ -1,9 +1,11 @@
 .obsidian/workspace.json
+.obsidian/app.json
 .obsidian/cache
 .DS_Store
 *.tmp
 
 # Claude Code local overrides & credentials
+.claude/settings.json
 .claude/settings.local.json
 .claude/.credentials*
 
