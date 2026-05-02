@@ -24,5 +24,13 @@ Key features relevant to the pattern:
 - **Marp plugin**: Renders markdown as slide presentations; enables LLM-generated reports as presentation-ready slide decks.
 - **Canvas**: Spatial, whiteboard-style view of notes as connected nodes; particularly valuable for visual thinkers (e.g., designers).
 
+## Key works / outputs
+- Obsidian application — local-first markdown note-taking app with bidirectional wikilinks, graph view, and plugin ecosystem; primary product of Dynalist Inc.
+- Obsidian Web Clipper — browser extension for converting web articles to local markdown.
+
+## Affiliations and relationships
+- Dynalist Inc. — creator and developer of Obsidian (founders: Erica Xu and Shida Li).
+- [[andrej-karpathy]] — public advocate; described his [[llm-wiki-pattern]] workflow as pairing Claude Code with Obsidian as the viewer.
+
 ## Current status / latest developments
 As of 2026, Obsidian is widely adopted in the [[llm-wiki-pattern]] community. Its combination of local-first storage (no vendor lock-in, no subscription required for core use), bidirectional links, and graph view makes it the most frequently cited frontend for LLM-maintained wikis. At least one product design leader (Polgár, per secondary sources) switched their entire note-taking workflow to Obsidian specifically to enable direct Claude Code file access without MCP complexity.

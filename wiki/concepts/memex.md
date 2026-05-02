@@ -25,6 +25,9 @@ The Memex anticipated hypertext, the World Wide Web, and personal knowledge mana
 
 The web that emerged is public and noisy rather than private and curated, which is not what Bush envisioned. The [[llm-wiki-pattern]] is arguably closer to Bush's original vision: private, deeply interlinked, actively curated. The part Bush could not solve — who creates and maintains the associative trails — is resolved by delegating trail-maintenance to an LLM.
 
+## Key variants or extensions
+The Memex was never built. Its conceptual successors include hypertext (Ted Nelson, 1960s), the World Wide Web (Tim Berners-Lee, 1989), personal knowledge managers like [[obsidian]], and the [[llm-wiki-pattern]], which resolves Bush's unsolved maintenance problem by delegating trail-forging to an LLM.
+
 ## Limitations and open questions
 Bush could not solve the maintenance problem: in the Memex, the human must forge every link manually. The [[llm-wiki-pattern]] resolves this by automating link creation and maintenance, but introduces the question of whether the trails that result from LLM curation carry the same epistemic value as trails forged through deliberate human reasoning.
 

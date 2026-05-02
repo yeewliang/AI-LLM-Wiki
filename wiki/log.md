@@ -1,5 +1,14 @@
 # Operation Log
 
+## 2026-05-02 (schema audit)
+- **Schema audit:** Retroactively applied correct section structure to all wiki pages. No frontmatter fields were missing across any page. Six pages were missing required template sections; all added with minimal content.
+  - Updated: [[memex]] — added `## Key variants or extensions` (conceptual descendants: hypertext, WWW, [[llm-wiki-pattern]])
+  - Updated: [[zettelkasten]] — added `## Key variants or extensions` (digital PKM tools, [[llm-wiki-pattern]])
+  - Updated: [[cursor]] — added `## Key works / outputs` (Cursor IDE) and `## Affiliations and relationships` (Anysphere Inc., VS Code upstream)
+  - Updated: [[niklas-luhmann]] — added `## Current status / latest developments` (died 1998; Zettelkasten digitised at University of Bielefeld)
+  - Updated: [[obsidian]] — added `## Key works / outputs` (Obsidian app, Web Clipper) and `## Affiliations and relationships` (Dynalist Inc., [[andrej-karpathy]])
+  - Updated: [[vannevar-bush]] — added `## Current status / latest developments` (died 1974; "As We May Think" remains active citation)
+
 ## 2026-05-02
 - **Ingested:** `raw/Andrej Karpathy Stopped Using AI to Write Code. He's Using It to Build a Second Brain Instead.md`
   - Created: [[2026-04-karpathy-second-brain-explained]] (source summary)

@@ -26,6 +26,10 @@ The Zettelkasten also demonstrates that a sufficiently disciplined linking pract
 
 > [synthesis] LLM Wiki and Zettelkasten represent opposite ends of a spectrum: maximum automation vs. maximum deliberate friction. The right balance likely depends on the goal — domain orientation and breadth (LLM Wiki excels) vs. deep original synthesis and retained understanding (Zettelkasten excels).
 
+## Key variants or extensions
+- **Digital PKM tools**: [[obsidian]], Roam Research, Logseq, and Notion digitise the linking principles while removing the physical card format and adding backlink automation.
+- **[[llm-wiki-pattern]]**: Automates both the linking and the writing steps, maximising scale at the cost of the deliberate-friction property Luhmann considered essential to understanding.
+
 ## Limitations and open questions
 - High maintenance burden by design: every note must be written and linked manually. This is the feature, not a bug — but it limits scalability.
 - The method assumes the practitioner has time and cognitive bandwidth to reformulate every idea. For breadth-first research across many sources, this is often impractical.

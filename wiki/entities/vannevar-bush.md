@@ -27,3 +27,6 @@ His central problem statement — that knowledge is accumulating faster than hum
 - MIT — Dean of Engineering
 - Carnegie Institution of Washington — President
 - US Office of Scientific Research and Development — Director (WWII)
+
+## Current status / latest developments
+Bush died in 1974. "As We May Think" (1945) is still widely cited in HCI, knowledge management, and AI literature. The [[llm-wiki-pattern]] is frequently described as the closest practical realisation of his [[memex]] vision to date.

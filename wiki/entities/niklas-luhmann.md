@@ -26,3 +26,6 @@ Luhmann also described the Zettelkasten as a "communication partner" — a syste
 
 ## Affiliations and relationships
 - University of Bielefeld — sociology professor (1968–1993)
+
+## Current status / latest developments
+Luhmann died in 1998. His Zettelkasten (90,000 cards) has been digitised and is publicly accessible via the Niklas Luhmann Archive at the University of Bielefeld. It remains an active reference in knowledge management, HCI, and personal productivity literature.
