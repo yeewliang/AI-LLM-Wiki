@@ -3,7 +3,7 @@ type: concept
 title: Vibe Coding
 aliases: [vibe coding, intent-driven programming]
 tags: [llm, workflow, code-generation, agents]
-related: [[andrej-karpathy]], [[llm-wiki-pattern]]
+related: [[andrej-karpathy]], [[llm-wiki-pattern]], [[agentic-engineering]], [[five-levels-of-ai-engineering]], [[supervisory-engineering]]
 created: 2026-05-02
 updated: 2026-05-02
 ---
@@ -33,5 +33,8 @@ Karpathy positioned vibe coding as the first of three phases of human-AI collabo
 - Effectiveness degrades on novel, domain-specific, or mathematically precise problems where the LLM lacks training coverage.
 - Whether vibe coding produces maintainable production systems at scale remains an open empirical question as of 2026.
 
+Beyond the programming-style framing, vibe coding now also refers to the *organisational phenomenon* of non-technical staff (product managers, designers, policy officers) shipping working software with AI assistance — extending Level 1 capability to people who would not previously have written code. This sits at the entry of the [[five-levels-of-ai-engineering]] progression and motivates the [[platform-as-trojan-horse]] response: extend governance and review to builders who have no engineering training.
+
 ## Key sources
 - [[andrej-karpathy]] — coined the term February 2026; described as a natural consequence of LLM capability reaching the threshold where intent specification is faster than implementation
+- [[2026-05-sausheong-vibe-to-agentic]] — Extends vibe coding to organisational and governance consequences; situates it as Level 1 in the [[five-levels-of-ai-engineering]] framework

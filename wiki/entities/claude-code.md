@@ -1,0 +1,35 @@
+---
+type: entity
+entity_class: tool
+title: Claude Code
+aliases: [claude-code]
+tags: [agent, cli, anthropic, agentic-engineering]
+related: [[agentic-engineering]], [[claude-code-configuration]], [[model-context-protocol]], [[anthropic]]
+created: 2026-05-02
+updated: 2026-05-02
+---
+
+# Claude Code
+
+## Overview
+Anthropic's terminal-native agentic coding tool. Operates as a CLI rather than an IDE plugin — part of a broader 2026 trend of the terminal re-emerging as the primary interface for AI-assisted software development. Configured per-repository through a `.claude/` directory of memory files, rules, agents, skills, hooks, and MCP server declarations.
+
+## Why this entity matters to AI
+Has emerged as the dominant agentic coding tool in industry conversations as of mid-2026, with traditional IDE-based assistants (Copilot, Windsurf, GitLab Duo) losing centrality in technical discussion. Adopted as a standard offering by [[govtech-singapore]] alongside Copilot. Some GovTech engineers have organically stopped writing code by hand entirely, relying on Claude Code with their Agent Prime Directives context pack.
+
+Claude Code is the canonical implementation point for [[agentic-engineering]] practices: plan mode, custom subagents with tool allowlists, skills with progressive disclosure, hooks (including deferred permissions for safe headless automation), and MCP-driven external tool integration. It is also the most common viewer/maintainer reference for the [[llm-wiki-pattern]] (alongside [[cursor]]).
+
+## Key works / outputs
+- The Claude Code CLI — the tool itself
+- `.claude/` configuration surface area — see [[claude-code-configuration]] for the full eight-layer stack (memory, rules, plan mode, subagents, skills, hooks, MCP, worktrees + headless)
+- April 2026 release: `PermissionDenied` hook event; **Deferred Permissions** (pre-tool hooks can pause an agent mid-run for out-of-band human approval); MCP `anthropic/maxResultSizeChars` annotation
+- Tool-search lazy loading documentation: notes that 50 tools without lazy loading consume 10–20k tokens/turn, reduced by ~85% with lazy loading
+
+## Affiliations and relationships
+- [[anthropic]] — vendor
+- Used as the agent layer in [[llm-wiki-pattern]] implementations (CLAUDE.md schema)
+- Adopted by [[govtech-singapore]] as a standardised tool
+- Competes with [[cursor]], Windsurf, GitHub Copilot in the agentic coding space
+
+## Current status / latest developments
+As of May 2026, on the Opus 4.7 model line (with a tokenizer change that maps prior prompts to roughly 1.0–1.35× more tokens — strict ambient-context control matters more under the new model). Active development: deferred-permission hook semantics, MCP server-side annotations for inline doc handling, tool-search lazy loading.

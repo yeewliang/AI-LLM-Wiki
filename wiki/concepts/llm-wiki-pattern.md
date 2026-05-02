@@ -38,7 +38,8 @@ Contrast with [[retrieval-augmented-generation]]: RAG re-derives knowledge at qu
 ## Key variants or extensions
 - **Fine-tuning endpoint**: Karpathy notes that a sufficiently clean, comprehensive wiki could generate synthetic training data for fine-tuning a smaller LLM, internalising domain knowledge into model weights rather than reading it at query time.
 - **Team/business variant**: Internal wikis fed by Slack threads, meeting transcripts, customer calls. Humans review LLM-generated updates rather than writing them.
-- **Search augmentation**: At scale (~hundreds of pages), the `index.md` approach starts to degrade. Tools like `qmd` (hybrid BM25/vector search for markdown, with CLI and MCP server) can replace the index for retrieval.
+- **Search augmentation**: At scale (~hundreds of pages), the `index.md` approach starts to degrade. Tools like `qmd` by [[tobi-lutke]] (hybrid BM25/vector search for markdown, with CLI and MCP server) can replace the index for retrieval.
+- **Ecosystem variants** (per [[2026-05-karpathy-llm-wiki-future]]): Waykee Cortex (hierarchical team-context inheritance with combined Knowledge + Work layers); Sage-Wiki by xoai (LLM-as-compiler with typed `is-a` / `contradicts` entity relations); Thinking-MCP (captures decision rules and heuristics with node decay rather than persistent facts); ELF (PARA + wiki for scientific research with base-delta experiment tracking).
 - **Three phases framing**: [[andrej-karpathy]] (per secondary sources) positioned the LLM Wiki as a third phase of human-AI collaboration — after vibe coding and agentic engineering, AI managing knowledge rather than code. This framing is editorial interpretation; treat as [synthesis] until a direct citation is available.
 
 ## Limitations and open questions
@@ -52,3 +53,4 @@ Contrast with [[retrieval-augmented-generation]]: RAG re-derives knowledge at qu
 - [[kosuri-2026-llm-wiki-build]] — Practitioner implementation; confirms 10–15 page updates per ingest and index.md sufficiency at moderate scale
 - [[2026-04-karpathy-second-brain-explained]] — Full architecture walkthrough; introduces fine-tuning downstream use case
 - [[2026-04-designer-llm-wiki]] — Designer use case; adds three-phases framing
+- [[2026-05-karpathy-llm-wiki-future]] — Ecosystem map; introduces five adjacent projects (Waykee, Sage-Wiki, Thinking-MCP, ELF, qmd)

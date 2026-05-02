@@ -1,5 +1,33 @@
 # Operation Log
 
+## 2026-05-02 (ingest batch 2)
+- **Ingested:** `raw/2026-05-02-why-andrej-karpathy's-"llm-wiki"-is-the-future-of-personal-knowledge.md`
+  - Created: [[2026-05-karpathy-llm-wiki-future]] (source summary)
+  - Created: [[tobi-lutke]] (entity — person; built `qmd`)
+  - Updated: [[llm-wiki-pattern]] — added ecosystem variants (Waykee Cortex, Sage-Wiki, Thinking-MCP, ELF); attributed `qmd` to [[tobi-lutke]]; added new source to Key Sources
+
+- **Ingested:** `raw/2026-05-02-from-vibe-coding-to-agentic-engineering.md`
+  - Created: [[2026-05-sausheong-vibe-to-agentic]] (source summary)
+  - Created: [[agentic-engineering]] (concept) — multi-step agent execution; configuration-driven evolution of vibe coding
+  - Created: [[five-levels-of-ai-engineering]] (concept) — Shapiro framework; staged AI-in-software progression
+  - Created: [[supervisory-engineering]] (concept) — directing/evaluating/correcting AI output as the new core competency
+  - Created: [[platform-as-trojan-horse]] (concept) — encoding governance into infrastructure rather than policy
+  - Created: [[govtech-singapore]] (entity — organisation)
+  - Created: [[sausheong-chang]] (entity — person)
+  - Created: [[dan-shapiro]] (entity — person)
+  - Updated: [[vibe-coding]] — added related links to new concepts; added organisational/Level 1 framing; cited new source
+
+- **Ingested:** `raw/2026-05-02-i-spent-6-months-tuning-claude-code...md`
+  - Created: [[2026-05-claude-code-tuning-stack]] (source summary)
+  - Created: [[claude-code]] (entity — tool; promoted from passing mention)
+  - Created: [[anthropic]] (entity — organisation)
+  - Created: [[claude-code-configuration]] (concept) — eight-layer `.claude/` stack
+  - Created: [[model-context-protocol]] (concept) — MCP token economics, server-side annotations, lazy loading
+  - Updated: [[cursor]] — added related links to [[claude-code]] and [[agentic-engineering]]
+
+- **Archived:** moved all six processed raw articles into `raw/archive/`
+- **Updated:** `wiki/index.md` — page count updated to 25; added new entries across Concepts, People, Organisations, Tools, Sources
+
 ## 2026-05-02 (synthesis)
 - **Query:** "How to improve vibe coding?" — existing wiki did not have a dedicated answer.
   - Created: [[improving-vibe-coding]] (synthesis) — mitigation strategies for vibe coding's limitations (complexity accretion, security review, novel problems); maps supervised vs unsupervised variants to use cases; identifies implicit improvement strategies from documented failure modes

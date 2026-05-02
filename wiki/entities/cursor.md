@@ -4,7 +4,7 @@ entity_class: tool
 title: Cursor
 aliases: []
 tags: [ai-ide, tool, code-editor]
-related: [[llm-wiki-pattern]]
+related: [[llm-wiki-pattern]], [[claude-code]], [[agentic-engineering]]
 created: 2026-05-02
 updated: 2026-05-02
 ---
