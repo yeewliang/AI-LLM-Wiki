@@ -20,7 +20,7 @@
   - Created: [[retrieval-augmented-generation]] (concept)
   - Created: [[memex]] (concept)
   - Created: [[zettelkasten]] (concept)
-  - Created: [[wiki/index.md]], [[wiki/log.md]] (operational files)
+  - Created: `wiki/index.md`, `wiki/log.md` (operational files)
 
 - **Ingested:** `raw/I used Karpathy's LLM Wiki to build a knowledge base that maintains itself with AI.md`
   - Created: [[kosuri-2026-llm-wiki-build]] (source summary)
@@ -34,4 +34,11 @@
   - Updated: [[memex]] — reinforced with "closer to Bush's vision than anything we've built in 80 years" framing
   - Updated: [[llm-wiki-pattern]] — added "three phases" framing (vibe coding → agentic engineering → knowledge management); flagged as editorial interpretation pending direct Karpathy citation
   - Updated: [[andrej-karpathy]] — added "three phases" framing note with same caveat
-  - Updated: [[wiki/index.md]] — page count updated to 12
+  - Updated: `wiki/index.md` — page count updated to 12
+
+## 2026-05-02 (lint)
+- **Lint audit:** Full wiki scan across 12 pages. One broken wikilink found; two path-style log references cleaned.
+  - **Fixed (P0):** `[[vibe-coding]]` in [[andrej-karpathy]] `related:` field was a dangling link — created [[vibe-coding]] (concept) covering intent-driven LLM programming coined by Karpathy, Feb 2026
+  - **Fixed (P1):** `[[wiki/index.md]]` and `[[wiki/log.md]]` in log.md converted to backtick code references — operational files are not wiki content pages and should not be wikilinked
+  - Updated: `wiki/index.md` — page count updated to 13; added [[vibe-coding]] entry under Concepts
+  - No missing frontmatter, no orphan pages, no stale dates, no missing index entries found

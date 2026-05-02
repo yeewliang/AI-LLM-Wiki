@@ -1,9 +1,10 @@
 # Wiki Index
 
-Last updated: 2026-05-02 | Pages: 12
+Last updated: 2026-05-02 | Pages: 13
 
 ## Concepts
 - [[llm-wiki-pattern]] — LLM-maintained persistent wiki; three-layer architecture (raw/wiki/schema), three operations (ingest/query/lint)
+- [[vibe-coding]] — Intent-driven LLM programming coined by Karpathy (Feb 2026); developer specifies behaviour, LLM generates code
 - [[retrieval-augmented-generation]] — Embedding-based document retrieval at query time; baseline contrasted with the LLM Wiki pattern
 - [[memex]] — Vannevar Bush's 1945 vision of a personal, associatively-linked knowledge machine; intellectual predecessor to LLM Wiki
 - [[zettelkasten]] — Luhmann's interlinked card index; manual-friction counterpoint to LLM-automated knowledge systems
