@@ -1,5 +1,10 @@
 # Operation Log
 
+## 2026-05-02 (synthesis)
+- **Query:** "How to improve vibe coding?" — existing wiki did not have a dedicated answer.
+  - Created: [[improving-vibe-coding]] (synthesis) — mitigation strategies for vibe coding's limitations (complexity accretion, security review, novel problems); maps supervised vs unsupervised variants to use cases; identifies implicit improvement strategies from documented failure modes
+  - Updated: `wiki/index.md` — added Synthesis section; page count updated to 14
+
 ## 2026-05-02 (schema audit)
 - **Schema audit:** Retroactively applied correct section structure to all wiki pages. No frontmatter fields were missing across any page. Six pages were missing required template sections; all added with minimal content.
   - Updated: [[memex]] — added `## Key variants or extensions` (conceptual descendants: hypertext, WWW, [[llm-wiki-pattern]])

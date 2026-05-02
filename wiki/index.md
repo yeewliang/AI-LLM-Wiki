@@ -1,6 +1,6 @@
 # Wiki Index
 
-Last updated: 2026-05-02 | Pages: 13
+Last updated: 2026-05-02 | Pages: 14
 
 ## Concepts
 - [[llm-wiki-pattern]] — LLM-maintained persistent wiki; three-layer architecture (raw/wiki/schema), three operations (ingest/query/lint)
@@ -17,6 +17,9 @@ Last updated: 2026-05-02 | Pages: 13
 ## Entities — Tools
 - [[obsidian]] — Local-first markdown app; canonical viewing layer for LLM Wiki implementations
 - [[cursor]] — AI-native code editor; alternative agent layer to Claude Code for LLM Wiki maintenance
+
+## Synthesis
+- [[improving-vibe-coding]] — Mitigation strategies for vibe coding's documented limitations (complexity, security, novel problems)
 
 ## Sources
 - [[2026-04-karpathy-second-brain-explained]] — Journalistic walkthrough of the LLM Wiki pattern; full architecture and step-by-step setup
