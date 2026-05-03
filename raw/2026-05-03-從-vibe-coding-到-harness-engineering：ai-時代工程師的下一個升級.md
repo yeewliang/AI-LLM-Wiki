@@ -14,7 +14,7 @@
 
 AI 輔助開發已有幾個可辨識的階段，由淺入深大致是這樣：
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ORiSWK8BfznGXeuxiMJizA.png)
+![[1*ORiSWK8BfznGXeuxiMJizA.png]]
 
 ### Prompt Engineering
 
@@ -38,7 +38,7 @@ AI 輔助開發已有幾個可辨識的階段，由淺入深大致是這樣：
 
 這個定義把 harness 從「一段說明文字」升格為一個工程物件 — — 有四個元件，可以被設計、版本化、評估。
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*SC8ars7Rm8Rfrv65yrSuRQ.png)
+![[1*SC8ars7Rm8Rfrv65yrSuRQ.png]]
 
 四個元件缺一不可。少了任何一個，agent 就在那個維度沒有邊界，遲早出問題。
 
@@ -105,7 +105,7 @@ done
 
 而 Ralph 六個信條對應到 Harness Engineering 原則：
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*A5H5YBlcclS-0HBwkijUtw.png)
+![[1*A5H5YBlcclS-0HBwkijUtw.png]]
 
 到這邊，小總結在 harness engineering 中，我覺得可以先做的
 
