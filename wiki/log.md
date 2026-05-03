@@ -1,5 +1,10 @@
 # Operation Log
 
+## 2026-05-03 (report)
+- **Report:** `output/2026-05-03-vibe-coding-report.md`
+  - Topic: vibe coding — definition, two variants, failure modes and mitigations, progression through agentic and supervisory engineering, five-level framework, organisational consequences, platform-as-trojan-horse response, capability-threshold product design, open questions
+  - Synthesised from: [[vibe-coding]], [[agentic-engineering]], [[supervisory-engineering]], [[five-levels-of-ai-engineering]], [[improving-vibe-coding]], [[platform-as-trojan-horse]], [[capability-threshold-product-design]], [[claude-code-configuration]], [[andrej-karpathy]], [[sausheong-chang]], [[cat-wu]]
+
 ## 2026-05-03
 - **Ingested:** `raw/2026-05-03-How Anthropic's product team moves faster than anyone else — Cat Wu (Head of Product, Claude Code).md`
   - Created: [[2026-05-cat-wu-anthropic-product-velocity]] (source summary)
