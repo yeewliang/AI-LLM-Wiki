@@ -1,5 +1,15 @@
 # Operation Log
 
+## 2026-05-03
+- **Ingested:** `raw/2026-05-03-How Anthropic's product team moves faster than anyone else — Cat Wu (Head of Product, Claude Code).md`
+  - Created: [[2026-05-cat-wu-anthropic-product-velocity]] (source summary)
+  - Created: [[cat-wu]] (entity — person; Head of Product, Claude Code at Anthropic)
+  - Created: [[capability-threshold-product-design]] (concept — removing UI crutches as models improve; new product categories unlocked at accuracy thresholds; 100% accuracy rule)
+  - Updated: [[claude-code]] — added CLI vs Desktop distinction, Co-Work product split, capability-threshold design note, source code leak context
+  - Updated: [[anthropic]] — added product culture section (timeline compression, principles-over-process, [[cat-wu]] as Head of Product)
+  - Updated: `wiki/index.md` — page count updated to 28; added [[capability-threshold-product-design]], [[cat-wu]], [[2026-05-cat-wu-anthropic-product-velocity]]
+- **Archived:** moved raw file to `raw/archive/`
+
 ## 2026-05-02 (ingest batch 2)
 - **Ingested:** `raw/2026-05-02-why-andrej-karpathy's-"llm-wiki"-is-the-future-of-personal-knowledge.md`
   - Created: [[2026-05-karpathy-llm-wiki-future]] (source summary)

@@ -4,9 +4,9 @@ entity_class: tool
 title: Claude Code
 aliases: [claude-code]
 tags: [agent, cli, anthropic, agentic-engineering]
-related: [[agentic-engineering]], [[claude-code-configuration]], [[model-context-protocol]], [[anthropic]]
+related: [[agentic-engineering]], [[claude-code-configuration]], [[model-context-protocol]], [[anthropic]], [[capability-threshold-product-design]], [[cat-wu]]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 ---
 
 # Claude Code
@@ -31,5 +31,13 @@ Claude Code is the canonical implementation point for [[agentic-engineering]] pr
 - Adopted by [[govtech-singapore]] as a standardised tool
 - Competes with [[cursor]], Windsurf, GitHub Copilot in the agentic coding space
 
+## Product surface details
+CLI vs Desktop distinction (per [[cat-wu]], May 2026):
+- **CLI** — recommended for rapid code tasks where visual output is not needed
+- **Desktop app** — recommended for frontend development; allows visual preview of web apps in-browser, making UI iteration viable without a separate dev server
+- **Co-Work** (separate Anthropic product, not Claude Code) — targets non-code workflows: document drafting, inbox zero, presentation generation; integrates with Slack, Gmail, Google Drive
+
+Product design follows [[capability-threshold-product-design]]: UI features are added to compensate for model limitations and removed as models outgrow the need. Example: older models required a structured to-do list UI to complete large refactors; current models hold context natively — the UI was removed.
+
 ## Current status / latest developments
-As of May 2026, on the Opus 4.7 model line (with a tokenizer change that maps prior prompts to roughly 1.0–1.35× more tokens — strict ambient-context control matters more under the new model). Active development: deferred-permission hook semantics, MCP server-side annotations for inline doc handling, tool-search lazy loading.
+As of May 2026, on the Opus 4.7 model line (with a tokenizer change that maps prior prompts to roughly 1.0–1.35× more tokens — strict ambient-context control matters more under the new model). Active development: deferred-permission hook semantics, MCP server-side annotations for inline doc handling, tool-search lazy loading. Source code leak incident (human + Claude collaborating on a PR) led to hardened internal safeguards.

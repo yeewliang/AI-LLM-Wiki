@@ -4,9 +4,9 @@ entity_class: organisation
 title: Anthropic
 aliases: []
 tags: [ai-lab, frontier-lab, llm, alignment]
-related: [[claude-code]]
+related: [[claude-code]], [[cat-wu]], [[capability-threshold-product-design]]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 ---
 
 # Anthropic
@@ -25,6 +25,9 @@ One of the small set of frontier labs producing top-tier general-purpose LLMs. A
 ## Affiliations and relationships
 - Competes with OpenAI, DeepMind, Meta AI, Mistral in the frontier LLM space
 - Co-developer / supporter of the [[model-context-protocol]] ecosystem
+
+## Product culture
+Anthropic minimises process overhead in favour of clear goal-setting and team principles that allow engineers to ship independently without cross-functional alignment bottlenecks (per [[cat-wu]], May 2026). Product timelines have collapsed from 6–12 months to weeks or days as AI accelerates engineering and model capabilities improve. Product design follows [[capability-threshold-product-design]]: UI surfaces are treated as temporary scaffolding, stripped when models outgrow the need and added when new capability thresholds unlock new categories. Head of Product for Claude Code: [[cat-wu]].
 
 ## Current status / latest developments
 Active model and tooling development as of mid-2026: Opus 4.7 release with tokenizer change; April 2026 Claude Code release adding the `PermissionDenied` hook and deferred-permission semantics; MCP server-side `anthropic/maxResultSizeChars` annotation.
