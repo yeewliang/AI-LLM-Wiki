@@ -23,7 +23,15 @@ engineer would actually want to read.
 
 ```
 vault/
+├── .claude/
+│   └── commands/               # Custom slash commands for Claude Code
+│       ├── ingest.md           # /ingest — process new files in raw/
+│       ├── lint.md             # /lint — audit wiki for broken links and gaps
+│       ├── query.md            # /query — answer questions from wiki only
+│       ├── report.md           # /report — generate briefing on a topic
+│       └── update.md           # /update — refresh an existing page
 ├── raw/                        # Inbox — source material lives here, never edited
+│   ├── archive/                # Processed sources moved here after ingest
 │   └── assets/                 # Images, PDFs, attachments
 ├── wiki/
 │   ├── concepts/               # Ideas, algorithms, frameworks, theories
@@ -42,9 +50,48 @@ vault/
 - Every operation (ingest, update, lint) must be logged in `wiki/log.md`.
 - Before creating any page, verify it follows the exact schema for its type. Never create a page without complete frontmatter.
 - If a page already exists without frontmatter, add the missing fields before making any other edits to that page.
+- After every ingest, move processed source files from `raw/` to `raw/archive/`. Never delete files from `raw/`.
 
 ---
 
+## Commands Reference
+
+Slash commands live in `.claude/commands/`. Each file defines what Claude does
+when that command is typed in Claude Code. Do not modify these files mid-session.
+
+| Command | File | What it does |
+|---|---|---|
+| `/ingest` | `ingest.md` | Process all new files in `raw/`, build wiki pages, archive sources, commit |
+| `/lint` | `lint.md` | Audit wiki for broken links, orphans, missing frontmatter, stale pages |
+| `/query [question]` | `query.md` | Answer from wiki only, cite pages, write synthesis if needed |
+| `/report [topic]` | `report.md` | Generate structured briefing, save to `output/`, commit |
+| `/update [page]` | `update.md` | Refresh a specific page, preserve structure, log and commit |
+
+**If `.claude/commands/` does not exist**, create it and populate each file
+using the definitions in the Core Commands section below before doing anything else.
+
+---
+
+
+---
+
+## Language Policy
+
+All wiki pages are written in English regardless of source language.
+
+When ingesting non-English sources:
+- Translate all content into English for the wiki page
+- Preserve original technical terms in parentheses on first use
+  e.g. "attention mechanism (注意力机制)", "reinforcement learning (强化学习)"
+- Add a `language:` field to the source frontmatter to record the original language
+  e.g. `language: zh` for Chinese, `language: ms` for Malay, `language: ja` for Japanese
+- Note in the source summary Quality Assessment if translation may have lost nuance
+
+**Supported source languages:** English, Mandarin Chinese (简体/繁體), Malay, Japanese, Korean.
+For other languages, flag to the owner before ingesting.
+
+**Wikilink rule for translated terms:** Always create the wikilink using the English
+page name. Never create parallel pages in other languages for the same concept.
 ## Domain Scope
 
 This wiki covers the following areas. Stay within scope unless explicitly asked
@@ -206,16 +253,21 @@ and back-link any mentions of the new entity or concept.
 
 ## Core Commands
 
+These are the canonical definitions. They are also saved as files in
+`.claude/commands/` so they run as slash commands in Claude Code.
+
 ### `/ingest`
-Process one or more files in `raw/`. For each source:
+Process all unarchived files in `raw/`. For each source:
 1. Read and fully understand the source.
-2. Create a `wiki/sources/` summary page (source schema below).
+2. Create a source summary page in `wiki/sources/` (schema below).
 3. Identify all concepts, entities, and claims worth recording.
-4. Create or update concept and entity pages in `wiki/concepts/` and `wiki/entities/`.
+4. Create or update pages in `wiki/concepts/` and `wiki/entities/`.
 5. Add or update backlinks in related pages.
 6. Check `wiki/synthesis/` — does any existing synthesis page need updating?
 7. Register all new pages in `wiki/index.md`.
 8. Log the operation in `wiki/log.md`.
+9. Move the processed file from `raw/` to `raw/archive/`.
+10. Run git commit and push.
 
 **Source summary schema:**
 ```markdown
@@ -258,7 +310,7 @@ unless the question explicitly requests it.
 
 ### `/update [page]`
 Refresh a page with new information. Preserve the existing structure. Log
-what changed and why in `wiki/log.md`.
+what changed and why in `wiki/log.md`. Run git commit and push.
 
 ### `/lint`
 Audit the entire wiki for:
@@ -268,11 +320,13 @@ Audit the entire wiki for:
 - Entity pages with stale `updated:` dates (flag if >90 days old)
 - Missing frontmatter fields
 
-Output a prioritised list of issues. Fix critical ones immediately.
+Output a prioritised list of issues. Fix all critical ones immediately.
+Run git commit and push.
 
 ### `/report [topic]`
 Generate a structured briefing on a topic by synthesising across relevant
 wiki pages. Save output to `output/YYYY-MM-DD-[topic]-report.md`.
+Run git commit and push.
 
 ---
 
@@ -325,6 +379,7 @@ Last updated: YYYY-MM-DD | Pages: N
   - Created: [[karpathy-llm-wiki-concept]], [[andrej-karpathy]]
   - Updated: [[llm-agents]], [[obsidian]]
   - Synthesis triggered: [[rag-vs-wiki-knowledge-bases]]
+  - Archived: `raw/archive/2026-04-03-karpathy-llm-wiki.md`
 ```
 
 ---
@@ -341,22 +396,11 @@ git commit -m "ingest: [source title(s)]"
 git push
 ```
 
-Use the ingested article title(s) as the commit message. If multiple files were
-ingested in one session, list them all:
-```bash
-git commit -m "ingest: karpathy-llm-wiki, attention-is-all-you-need"
-```
-
 ### After every `/update [page]`
 ```bash
 git add .
 git commit -m "update: [page name] — [one-line reason]"
 git push
-```
-
-Example:
-```bash
-git commit -m "update: anthropic.md — added Claude 4 release details"
 ```
 
 ### After every `/lint`
