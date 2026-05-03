@@ -1,6 +1,6 @@
 # Wiki Index
 
-Last updated: 2026-05-03 | Pages: 28
+Last updated: 2026-05-03 | Pages: 39
 
 ## Concepts
 - [[llm-wiki-pattern]] — LLM-maintained persistent wiki; three-layer architecture (raw/wiki/schema), three operations (ingest/query/lint)
@@ -13,6 +13,11 @@ Last updated: 2026-05-03 | Pages: 28
 - [[model-context-protocol]] — Protocol connecting agents to external tools; tool schemas have direct token-cost implications
 - [[claude-code-configuration]] — The eight-layer `.claude/` stack (memory, rules, plan mode, subagents, skills, hooks, MCP, worktrees + headless)
 - [[retrieval-augmented-generation]] — Embedding-based document retrieval at query time; baseline contrasted with the LLM Wiki pattern
+- [[agent-harness]] — Software layer owning context, tools, execution, identity; the "vehicle" vs model as "engine"; the real competitive battleground
+- [[agent-compaction]] — Context window management for long-running agents: cheap tricks, LLM summarisation, memory-as-substitute, failure recovery
+- [[prompt-cache-stability]] — Design discipline for keeping prompt prefixes identical; cache correctness affects both cost (10×) and agent behaviour consistency
+- [[skills-as-markdown]] — Capability extension via prose documents + YAML frontmatter; no compiled code; human-auditable; distributable via registries
+- [[index-pattern]] — Inject lightweight capability index; load full content on demand; reduces per-prompt tokens 5–15 KB; enables prompt-cache stability
 - [[memex]] — Vannevar Bush's 1945 vision of a personal, associatively-linked knowledge machine; intellectual predecessor to LLM Wiki
 - [[zettelkasten]] — Luhmann's interlinked card index; manual-friction counterpoint to LLM-automated knowledge systems
 
@@ -33,6 +38,8 @@ Last updated: 2026-05-03 | Pages: 28
 - [[obsidian]] — Local-first markdown app; canonical viewing layer for LLM Wiki implementations
 - [[cursor]] — AI-native code editor; alternative agent layer to Claude Code for LLM Wiki maintenance
 - [[claude-code]] — Anthropic's terminal-native agentic coding CLI; dominant agentic-engineering tool as of mid-2026
+- [[openclaw]] — Local-first agent gateway; 24 chat-channel adapters; 113 plugins; skills-as-markdown; documented harness-as-contract architecture
+- [[felix-agent]] — Single-binary local AI agent by sausheong-chang; everything-is-a-tool design; index pattern; self-built for personal non-coding work
 
 ## Synthesis
 - [[improving-vibe-coding]] — Mitigation strategies for vibe coding's documented limitations (complexity, security, novel problems)
@@ -45,3 +52,7 @@ Last updated: 2026-05-03 | Pages: 28
 - [[2026-05-sausheong-vibe-to-agentic]] — Practitioner strategy from GovTech Singapore; bottleneck inversion, supervisory engineering, platform stack
 - [[2026-05-claude-code-tuning-stack]] — Eight-layer Claude Code configuration with full artefacts; MCP token economics; deferred permissions
 - [[2026-05-cat-wu-anthropic-product-velocity]] — Anthropic product culture; capability-threshold design; Claude Code CLI vs Desktop; Co-Work distinction
+- [[2026-05-sausheong-agentic-in-the-wild]] — GovTech Singapore case studies; 8–30× productivity multipliers; role-boundary dissolution; Prelude architectural detail
+- [[2026-05-sausheong-dissecting-open-claw]] — OpenClaw architectural read; plugin SDK; skills-as-markdown; prompt-cache stability; agent loop contracts
+- [[2026-05-sausheong-felix-agent]] — Felix design rationale; everything-is-a-tool; index pattern; long-running process contract
+- [[2026-05-sausheong-own-your-harness]] — Compaction comparison (Claude Code vs OpenClaw); harness-ownership argument; production telemetry evidence

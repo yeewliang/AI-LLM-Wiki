@@ -1,5 +1,35 @@
 # Operation Log
 
+## 2026-05-03 (ingest batch 3)
+- **Ingested:** `raw/2026-05-03-agentic-engineering-in-the-wild.md`
+  - Created: [[2026-05-sausheong-agentic-in-the-wild]] (source summary)
+  - Updated: [[govtech-singapore]] — added Prelude full architecture detail; quantified productivity multipliers (8–12×, 15–22×, 30×); governance gaps section
+  - Updated: [[agentic-engineering]] — added concrete GovTech case study numbers to Key Sources
+  - Updated: [[sausheong-chang]] — added new work to Key works/outputs
+
+- **Ingested:** `raw/2026-05-03-dissecting-open-claw.md`
+  - Created: [[2026-05-sausheong-dissecting-open-claw]] (source summary)
+  - Created: [[openclaw]] (entity — tool; local-first agent gateway)
+  - Created: [[skills-as-markdown]] (concept — prose+YAML capability definition; no compiled code)
+  - Created: [[prompt-cache-stability]] (concept — prefix-correctness as tested invariant; cost and behaviour implications)
+  - Updated: [[sausheong-chang]] — added new work
+
+- **Ingested:** `raw/2026-05-03-i-built-my-own-ai-agent-and-named-it-after-a-cat.md`
+  - Created: [[2026-05-sausheong-felix-agent]] (source summary)
+  - Created: [[felix-agent]] (entity — tool; single-binary local AI agent)
+  - Created: [[index-pattern]] (concept — lightweight index injection; demand-load full content; prompt-cache stability mechanism)
+  - Updated: [[sausheong-chang]] — added new work
+
+- **Ingested:** `raw/2026-05-03-own-your-harness.md`
+  - Created: [[2026-05-sausheong-own-your-harness]] (source summary)
+  - Created: [[agent-harness]] (concept — software layer owning context/tools/execution/identity; "vehicle" vs model "engine")
+  - Created: [[agent-compaction]] (concept — full compaction stack: cheap tricks, LLM summarisation, memory-as-substitute, failure recovery; reactive vs preemptive)
+  - Updated: [[claude-code]] — added full compaction stack section with mechanism details and production telemetry numbers
+  - Updated: [[sausheong-chang]] — added new work
+
+- **Updated:** `wiki/index.md` — page count 28 → 39; added 5 new concepts, 2 new tools, 4 new sources
+- **Archived:** moved all 4 raw files to `raw/archive/`
+
 ## 2026-05-03 (report)
 - **Report:** `output/2026-05-03-vibe-coding-report.md`
   - Topic: vibe coding — definition, two variants, failure modes and mitigations, progression through agentic and supervisory engineering, five-level framework, organisational consequences, platform-as-trojan-horse response, capability-threshold product design, open questions

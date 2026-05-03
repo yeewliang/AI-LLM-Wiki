@@ -47,3 +47,4 @@ For organisations operating at scale, agentic engineering forces investment in [
 
 ## Key sources
 - [[2026-05-sausheong-vibe-to-agentic]] — Practitioner account from [[govtech-singapore]] mapping the shift, organisational consequences, and platform response
+- [[2026-05-sausheong-agentic-in-the-wild]] — Quantified case studies: 8–12× (solo engineer, 2 products in 2 weeks), 15–22× (2 data scientists, 30+ full-stack apps), 30× (per-showcase multiplier); role-boundary dissolution in practice; Prelude architectural detail
