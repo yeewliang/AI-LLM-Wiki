@@ -1,5 +1,13 @@
 # Operation Log
 
+## 2026-06-13 (lint)
+- **Audited:** entire `wiki/` (44 pages)
+- **Broken wikilinks:** none (the `[[page-name]]` in obsidian.md and `[[wiki/index.md]]`/`[[wiki/log.md]]` in log.md are inside backticks as examples, not live links)
+- **Unindexed pages:** none
+- **Stale entity dates:** none (all entity `updated:` ≥ 2026-05-02; 90-day cutoff is 2026-03-15)
+- **Frontmatter:** complete (source pages correctly use `date:`+`ingested:` per the source schema, not `created:`/`updated:`)
+- **Fixed (critical — orphan):** [[dan-shapiro]] had no inbound links; converted the plain-text "attributed to Dan Shapiro" in [[five-levels-of-ai-engineering]] to a `[[dan-shapiro]]` wikilink
+
 ## 2026-06-13 (ingest)
 - **Ingested:** `raw/2026-05-03-從-vibe-coding-到-harness-engineering：ai-時代工程師的下一個升級.md` (language: zh)
   - Created: [[2026-05-harness-engineering-next-upgrade]] (source summary; translated from Mandarin Chinese)

@@ -11,7 +11,7 @@ updated: 2026-06-13
 # Five Levels of AI Engineering
 
 ## What it is
-A staged framework attributed to Dan Shapiro for situating teams and organisations along the trajectory of AI in software development. Used to make deliberate choices about where to invest, what governance to apply, and which transitions to attempt — rather than being swept toward the highest level uniformly.
+A staged framework attributed to [[dan-shapiro]] for situating teams and organisations along the trajectory of AI in software development. Used to make deliberate choices about where to invest, what governance to apply, and which transitions to attempt — rather than being swept toward the highest level uniformly.
 
 ## How it works
 The levels are progressive but not uniformly applicable; different parts of an organisation can and should operate at different levels simultaneously, with governance matched to capability.
