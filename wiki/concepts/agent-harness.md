@@ -3,9 +3,9 @@ type: concept
 title: Agent Harness
 aliases: [agent runtime, agent scaffold]
 tags: [agents, infrastructure, agentic-engineering, architecture]
-related: [[agentic-engineering]], [[agent-compaction]], [[prompt-cache-stability]], [[index-pattern]], [[model-context-protocol]], [[claude-code]], [[openclaw]], [[felix-agent]]
+related: [[agentic-engineering]], [[harness-engineering]], [[agent-compaction]], [[prompt-cache-stability]], [[index-pattern]], [[model-context-protocol]], [[claude-code]], [[openclaw]], [[felix-agent]], [[martin-fowler]]
 created: 2026-05-03
-updated: 2026-05-03
+updated: 2026-06-13
 ---
 
 # Agent Harness
@@ -14,6 +14,11 @@ updated: 2026-05-03
 The software layer surrounding an LLM in an agent system that owns context management, tool routing, execution lifecycle, session identity, and integration with external services. The harness is distinct from the model: it determines how and when the model is called, what context it receives, what tools it may invoke, and how failures are handled.
 
 > [synthesis] Apt framing from [[sausheong-chang]]: "The model is the engine, but the harness is the vehicle."
+
+[[martin-fowler]]'s team gives a component-level definition that promotes the harness from a block of text to a designable, versionable, evaluable object:
+> harness = system prompt + Context Management + Tool Use + Evaluation Loop
+
+All four are required; missing any one leaves the agent unbounded on that dimension. The practice of designing and maintaining the harness and its surrounding constraints is [[harness-engineering]].
 
 ## How it works
 A harness wraps each model interaction with at minimum:

@@ -3,9 +3,9 @@ type: concept
 title: Vibe Coding
 aliases: [vibe coding, intent-driven programming]
 tags: [llm, workflow, code-generation, agents]
-related: [[andrej-karpathy]], [[llm-wiki-pattern]], [[agentic-engineering]], [[five-levels-of-ai-engineering]], [[supervisory-engineering]]
+related: [[andrej-karpathy]], [[llm-wiki-pattern]], [[agentic-engineering]], [[five-levels-of-ai-engineering]], [[supervisory-engineering]], [[harness-engineering]]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-06-13
 ---
 
 # Vibe Coding
@@ -22,6 +22,8 @@ Vibe coding does not require understanding every line of generated code, which i
 Reframes the bottleneck of software development: from knowing how to write code to knowing what to build. Lowers the barrier to prototyping significantly — non-developers can produce working code for well-specified problems. Enables developers to operate at a higher level of abstraction, delegating boilerplate and mechanical transformations to the LLM.
 
 Karpathy positioned vibe coding as the first of three phases of human-AI collaboration: (1) vibe coding (AI writes code), (2) agentic engineering (AI executes multi-step tasks), (3) AI manages knowledge (the [[llm-wiki-pattern]]). This "three phases" framing is attributed to Karpathy via secondary sources; treat as editorial interpretation until a direct citation is confirmed.
+
+A parallel progression frames vibe coding as the stage before [[harness-engineering]]: Prompt Engineering → Vibe Coding → Harness Engineering. In that framing vibe coding's low ceiling on large or multi-person codebases is the signal to move to harness engineering — designing the constraint system the agent works within rather than asking for better output.
 
 ## Key variants or extensions
 - **Supervised vibe coding**: Developer reviews every change before accepting; functions as an amplifier for experienced engineers who can quickly assess correctness.

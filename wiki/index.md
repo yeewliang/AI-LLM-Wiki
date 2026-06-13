@@ -1,11 +1,13 @@
 # Wiki Index
 
-Last updated: 2026-05-03 | Pages: 39
+Last updated: 2026-06-13 | Pages: 44
 
 ## Concepts
 - [[llm-wiki-pattern]] — LLM-maintained persistent wiki; three-layer architecture (raw/wiki/schema), three operations (ingest/query/lint)
 - [[vibe-coding]] — Intent-driven LLM programming coined by Karpathy (Feb 2026); developer specifies behaviour, LLM generates code
 - [[agentic-engineering]] — Multi-step agent execution at Levels 2–3 of the Shapiro framework; the configuration-driven evolution of vibe coding
+- [[harness-engineering]] — Discipline where the engineer's output is a constraint system, not code; six principles, three constraint tests; Prompt → Vibe → Harness progression
+- [[ralph-loop]] — Autonomous agent loop; clears context each iteration, reads PRD, does one task, commits, until done (snarktank/ralph)
 - [[supervisory-engineering]] — Emerging core competency: directing, evaluating, correcting AI output rather than implementing
 - [[five-levels-of-ai-engineering]] — Shapiro's progression: spicy autocomplete → coding assistants → autonomous agents → agent networks → software factory
 - [[platform-as-trojan-horse]] — Embedding governance/security/quality into platforms rather than relying on policy compliance
@@ -29,6 +31,8 @@ Last updated: 2026-05-03 | Pages: 39
 - [[dan-shapiro]] — Author of the five-level AI engineering framework
 - [[tobi-lutke]] — Shopify founder/CEO; built `qmd` markdown search MCP server
 - [[cat-wu]] — Head of Product, Claude Code, Anthropic; articulator of capability-threshold product design
+- [[martin-fowler]] — Software architecture author; his team's four-component definition of the agent harness grounds harness engineering
+- [[ryan-lopopolo]] — OpenAI engineer; case study (3 people, 5 months, ~1M LOC, 1,500+ PRs) anchoring the harness-engineering argument
 
 ## Entities — Organisations
 - [[anthropic]] — AI safety company; vendor of Claude models and Claude Code
@@ -56,3 +60,4 @@ Last updated: 2026-05-03 | Pages: 39
 - [[2026-05-sausheong-dissecting-open-claw]] — OpenClaw architectural read; plugin SDK; skills-as-markdown; prompt-cache stability; agent loop contracts
 - [[2026-05-sausheong-felix-agent]] — Felix design rationale; everything-is-a-tool; index pattern; long-running process contract
 - [[2026-05-sausheong-own-your-harness]] — Compaction comparison (Claude Code vs OpenClaw); harness-ownership argument; production telemetry evidence
+- [[2026-05-harness-engineering-next-upgrade]] — Chinese-language synthesis; Fowler's four-component harness, six harness-engineering principles, three constraint tests, Ralph mode

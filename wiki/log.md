@@ -1,5 +1,19 @@
 # Operation Log
 
+## 2026-06-13 (ingest)
+- **Ingested:** `raw/2026-05-03-從-vibe-coding-到-harness-engineering：ai-時代工程師的下一個升級.md` (language: zh)
+  - Created: [[2026-05-harness-engineering-next-upgrade]] (source summary; translated from Mandarin Chinese)
+  - Created: [[harness-engineering]] (concept — discipline; output is a constraint system not code; six principles, three constraint tests)
+  - Created: [[ralph-loop]] (concept — autonomous agent loop; clean-context-per-iteration; snarktank/ralph)
+  - Created: [[martin-fowler]] (entity — person; four-component harness definition)
+  - Created: [[ryan-lopopolo]] (entity — person; OpenAI engineer; ~1M LOC / 1,500+ PR case study)
+  - Updated: [[agent-harness]] — added Fowler four-component definition; linked harness-engineering; related/updated date
+  - Updated: [[agentic-engineering]] — linked harness-engineering as the configuration-stack-as-deliverable practice; related/updated date
+  - Updated: [[vibe-coding]] — added Prompt → Vibe → Harness progression note; related/updated date
+  - Updated: [[five-levels-of-ai-engineering]] — added harness-engineering to related; updated date
+  - Updated: `wiki/index.md` — page count 39 → 44; +2 concepts, +2 people, +1 source
+  - Archived: `raw/archive/2026-05-03-從-vibe-coding-到-harness-engineering：ai-時代工程師的下一個升級.md`
+
 ## 2026-05-03 (ingest batch 3)
 - **Ingested:** `raw/2026-05-03-agentic-engineering-in-the-wild.md`
   - Created: [[2026-05-sausheong-agentic-in-the-wild]] (source summary)

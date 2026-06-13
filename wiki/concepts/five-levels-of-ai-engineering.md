@@ -3,9 +3,9 @@ type: concept
 title: Five Levels of AI Engineering
 aliases: [Shapiro five levels, AI engineering levels]
 tags: [framework, software-engineering, agents, governance]
-related: [[vibe-coding]], [[agentic-engineering]], [[supervisory-engineering]]
+related: [[vibe-coding]], [[agentic-engineering]], [[supervisory-engineering]], [[harness-engineering]]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-06-13
 ---
 
 # Five Levels of AI Engineering

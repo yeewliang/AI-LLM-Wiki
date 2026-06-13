@@ -3,9 +3,9 @@ type: concept
 title: Agentic Engineering
 aliases: [agent-driven engineering, AI coding agents]
 tags: [llm, agents, workflow, software-engineering]
-related: [[vibe-coding]], [[supervisory-engineering]], [[five-levels-of-ai-engineering]], [[claude-code]], [[platform-as-trojan-horse]]
+related: [[vibe-coding]], [[supervisory-engineering]], [[five-levels-of-ai-engineering]], [[claude-code]], [[platform-as-trojan-horse]], [[harness-engineering]], [[agent-harness]]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-06-13
 ---
 
 # Agentic Engineering
@@ -24,7 +24,7 @@ A developer states a task — typically at the level of a feature, bug fix, or r
 - Hooks adding deterministic guardrails over the probabilistic agent.
 - A small set of MCP servers (filesystem, code graph, version control, documentation, web) — not many, since tool schemas consume context tokens on every turn.
 
-The human role shifts toward [[supervisory-engineering]]: specification, review, judgement on what to delegate, and out-of-band approval of risky operations.
+The human role shifts toward [[supervisory-engineering]]: specification, review, judgement on what to delegate, and out-of-band approval of risky operations. Building and maintaining this configuration stack as the primary deliverable — rather than the code — is [[harness-engineering]].
 
 ## Why it matters
 Agentic engineering is where most engineering organisations are currently transitioning (Level 2 → Level 3). It inverts the historical software bottleneck: when an agent can produce a working prototype overnight, *deciding what to build and whether it is right* becomes the critical path. Procurement, security review, change-approval chains, and committee-based governance — all designed assuming building took longer than deciding — become the dominant cost.
