@@ -1,5 +1,16 @@
 # Operation Log
 
+## 2026-06-21 (lint)
+- **Audited:** entire `wiki/` (49 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none
+- **Missing from index:** none
+- **Missing frontmatter:** none
+- **Stale entity dates:** none (90-day cutoff 2026-03-22; all entities updated 2026-05-02 or later)
+- **Fixed (P0 — orphan):** [[improving-vibe-coding]] synthesis had no inbound links from content pages — added `[[improving-vibe-coding]]` to `related:` and `Key sources` in [[vibe-coding]]; updated `vibe-coding` date to 2026-06-21
+
+## 2026-06-21 (ingest)
+- **Inbox:** `raw/` contained no unprocessed files — no action taken
+
 ## 2026-06-13 (lint)
 - **Audited:** entire `wiki/` (44 pages)
 - **Broken wikilinks:** none (the `[[page-name]]` in obsidian.md and `[[wiki/index.md]]`/`[[wiki/log.md]]` in log.md are inside backticks as examples, not live links)

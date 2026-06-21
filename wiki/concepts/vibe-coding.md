@@ -3,9 +3,9 @@ type: concept
 title: Vibe Coding
 aliases: [vibe coding, intent-driven programming]
 tags: [llm, workflow, code-generation, agents]
-related: [[andrej-karpathy]], [[llm-wiki-pattern]], [[agentic-engineering]], [[five-levels-of-ai-engineering]], [[supervisory-engineering]], [[harness-engineering]]
+related: [[andrej-karpathy]], [[llm-wiki-pattern]], [[agentic-engineering]], [[five-levels-of-ai-engineering]], [[supervisory-engineering]], [[harness-engineering]], [[improving-vibe-coding]]
 created: 2026-05-02
-updated: 2026-06-13
+updated: 2026-06-21
 ---
 
 # Vibe Coding
@@ -40,3 +40,4 @@ Beyond the programming-style framing, vibe coding now also refers to the *organi
 ## Key sources
 - [[andrej-karpathy]] — coined the term February 2026; described as a natural consequence of LLM capability reaching the threshold where intent specification is faster than implementation
 - [[2026-05-sausheong-vibe-to-agentic]] — Extends vibe coding to organisational and governance consequences; situates it as Level 1 in the [[five-levels-of-ai-engineering]] framework
+- [[improving-vibe-coding]] — Synthesis of mitigation strategies for the limitations above (complexity accretion, security review, novel problems)
