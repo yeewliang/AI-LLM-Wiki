@@ -87,8 +87,8 @@ vault/
 
 **1. Clone this repo**
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/yeewliang/AI-LLM-Wiki.git
+cd AI-LLM-Wiki
 ```
 
 **2. Install Claude Code**
