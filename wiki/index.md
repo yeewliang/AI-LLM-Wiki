@@ -1,6 +1,6 @@
 # Wiki Index
 
-Last updated: 2026-06-13 | Pages: 44
+Last updated: 2026-06-22 | Pages: 48
 
 ## Concepts
 - [[llm-wiki-pattern]] — LLM-maintained persistent wiki; three-layer architecture (raw/wiki/schema), three operations (ingest/query/lint)
