@@ -1,5 +1,15 @@
 # Operation Log
 
+## 2026-07-07 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none (the `[[page-name]]` in [[obsidian]] and `[[wiki/index.md]]`/`[[wiki/log.md]]` in log.md are inside backticks as syntax examples, not live links)
+- **Missing from index:** none (all 48 content pages listed in `index.md`)
+- **Concept orphans:** none (every concept has ≥1 inbound link from another content page)
+- **Synthesis orphans:** none ([[improving-vibe-coding]] back-linked from [[vibe-coding]] and [[2026-05-sausheong-vibe-to-agentic]])
+- **Stale entity dates:** none (90-day cutoff 2026-04-08; all 16 entities updated 2026-05-02 or later)
+- **Missing frontmatter:** none across concepts, entities, synthesis, sources
+- **Fixed:** nothing — wiki is clean; no changes required
+
 ## 2026-07-07 (ingest)
 - **Scanned `raw/`:** no unprocessed source documents. The only non-archived items were three orphaned figure assets in a mis-nested `raw/raw/assets/` path.
 - **Assets:** `1*SC8ars7Rm8Rfrv65yrSuRQ.png` (harness components table), `1*A5H5YBlcclS-0HBwkijUtw.png` (Ralph tenets ↔ harness engineering mapping), `1*ORiSWK8BfznGXeuxiMJizA.png` (Prompt / Vibe / Harness progression) — the three comparison tables from the already-ingested Chinese article `2026-05-03-從-vibe-coding-到-harness-engineering...`.
