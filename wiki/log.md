@@ -1,5 +1,15 @@
 # Operation Log
 
+## 2026-07-13 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none (the `[[page-name]]` in [[obsidian]] and `[[wiki/index.md]]`/`[[wiki/log.md]]` in log.md are inside backticks as syntax examples, not live links)
+- **Missing from index:** none (all 48 content pages listed in `index.md`; index count matches)
+- **Concept orphans:** none (every concept has ≥1 inbound link from another content page)
+- **Synthesis orphans:** none ([[improving-vibe-coding]] back-linked from [[vibe-coding]] and [[2026-05-sausheong-vibe-to-agentic]])
+- **Stale entity dates:** none (90-day cutoff 2026-04-14; oldest entities updated 2026-05-02, 72 days old)
+- **Missing frontmatter:** none across concepts, entities, synthesis, sources (sources correctly use `date:`/`ingested:` per schema)
+- **Fixed:** nothing — wiki is clean; no changes required
+
 ## 2026-07-12 (lint)
 - **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
 - **Broken wikilinks:** none (the `[[page-name]]` in [[obsidian]] is inside backticks as a syntax example, not a live link)
