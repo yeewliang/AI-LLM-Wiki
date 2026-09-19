@@ -1,5 +1,17 @@
 # Operation Log
 
+## 2026-09-20 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none (the `[[page-name]]` in [[obsidian]] and the `[[wiki/index.md]]`/`[[wiki/log.md]]`/`[[...]]` strings in log.md are inside backticks as syntax examples, not live links)
+- **Missing from index:** none (all 48 content pages listed in `index.md`; registered count matches file count 48/48)
+- **Concept/synthesis orphans:** none (every content page has ≥1 inbound link from another content page)
+- **Missing frontmatter:** none across concepts, entities, synthesis, sources (per-type required-field check clean)
+- **Stale entity dates (90-day cutoff = 2026-06-22):** all 16 of 16 entity pages remain over the threshold, unchanged from the 2026-09-19 audit — `raw/` inbox is still empty (last ingest 2026-07-07), so no new source material exists to justify a real refresh. Not fixed here: bumping `updated:` without new content would misrepresent the page as refreshed. Flagged for `/update` or `/ingest` with fresh sourcing.
+  - [[andrej-karpathy]], [[cursor]], [[dan-shapiro]], [[govtech-singapore]], [[niklas-luhmann]], [[obsidian]], [[sausheong-chang]], [[tobi-lutke]], [[vannevar-bush]] — 141 days
+  - [[anthropic]], [[cat-wu]], [[claude-code]], [[felix-agent]], [[openclaw]] — 140 days
+  - [[martin-fowler]], [[ryan-lopopolo]] — 99 days
+- **Fixed:** nothing structural — no broken links, missing index entries, orphans, or missing frontmatter this cycle. Index header retained at `Pages: 48`, last-updated 2026-06-22 (unchanged; no pages added or removed)
+
 ## 2026-09-19 (lint)
 - **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
 - **Broken wikilinks:** none (code-fenced/backticked `[[...]]` syntax examples excluded)
