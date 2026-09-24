@@ -1,5 +1,17 @@
 # Operation Log
 
+## 2026-09-25 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none (backticked `[[...]]` syntax examples in [[obsidian]] and log.md excluded)
+- **Missing from index:** none (48/48 registered; no index entries point to missing pages)
+- **Concept/synthesis orphans:** none
+- **Missing frontmatter:** none. An initial scan flagged `ingested:` missing on two source pages; this was a parser false positive (empty `url:` line), and both pages have the field.
+- **Stale entity dates (90-day cutoff = 2026-06-27):** all 16 of 16 entity pages still over the threshold. `raw/` inbox is still empty (last ingest 2026-07-07). Not fixed: bumping `updated:` without new content would misrepresent the pages as refreshed. Flagged for `/update` or `/ingest` with fresh sourcing.
+  - [[andrej-karpathy]], [[cursor]], [[dan-shapiro]], [[govtech-singapore]], [[niklas-luhmann]], [[obsidian]], [[sausheong-chang]], [[tobi-lutke]], [[vannevar-bush]]: 146 days
+  - [[anthropic]], [[cat-wu]], [[claude-code]], [[felix-agent]], [[openclaw]]: 145 days
+  - [[martin-fowler]], [[ryan-lopopolo]]: 104 days
+- **Fixed:** nothing structural this cycle. Index header unchanged (`Pages: 48`, last-updated 2026-06-22).
+
 ## 2026-09-23 (lint)
 - **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
 - **Broken wikilinks:** none (the `[[page-name]]` in [[obsidian]] and the `[[wiki/index.md]]`/`[[wiki/log.md]]`/`[[...]]` strings in log.md are inside backticks as syntax examples, not live links)
