@@ -1,5 +1,17 @@
 # Operation Log
 
+## 2026-10-04 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none (backticked `[[page-name]]` syntax example in [[obsidian]] excluded)
+- **Missing from index:** none (48/48 registered; `Pages: 48` matches file count)
+- **Concept/synthesis orphans:** none
+- **Missing frontmatter:** none
+- **Stale entity dates (90-day cutoff = 2026-07-06):** all 16 of 16 entity pages still over the threshold. `raw/` inbox still empty (last ingest 2026-07-07). Not fixed: bumping `updated:` without new content would misrepresent the pages as refreshed.
+  - [[andrej-karpathy]], [[cursor]], [[dan-shapiro]], [[govtech-singapore]], [[niklas-luhmann]], [[obsidian]], [[sausheong-chang]], [[tobi-lutke]], [[vannevar-bush]]: 155 days
+  - [[anthropic]], [[cat-wu]], [[claude-code]], [[felix-agent]], [[openclaw]]: 154 days
+  - [[martin-fowler]], [[ryan-lopopolo]]: 113 days
+- **Fixes applied:** none required
+
 ## 2026-10-03 (lint)
 - **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
 - **Broken wikilinks:** none (backticked `[[page-name]]` syntax example in [[obsidian]] excluded)
