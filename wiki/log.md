@@ -636,3 +636,12 @@
   - **Fixed (P1):** `[[wiki/index.md]]` and `[[wiki/log.md]]` in log.md converted to backtick code references — operational files are not wiki content pages and should not be wikilinked
   - Updated: `wiki/index.md` — page count updated to 13; added [[vibe-coding]] entry under Concepts
   - No missing frontmatter, no orphan pages, no stale dates, no missing index entries found
+
+## 2026-10-10 (lint)
+- **Lint audit:** Full wiki scan across 48 pages (12 sources, 16 entities, 19 concepts, 1 synthesis). No changes to content pages required.
+  - Broken wikilinks: none. `[[page-name]]` in [[obsidian]] is inside a code span (literal example), not a link.
+  - Index: all 48 pages registered; `Pages: 48` count correct.
+  - Orphans: none. Every concept page has at least one inbound wikilink.
+  - Frontmatter: all required fields present on every page.
+  - Flagged, not changed (stale): 16 entity pages with `updated:` >90 days old, as in prior audits. `raw/` has no unprocessed sources, so no new material exists to justify refreshing them. Dates left unchanged per policy.
+  - Flagged, not changed (schema): `date:` is month-only (`2026-04`) in [[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], and [[2026-04-designer-llm-wiki]]. Schema requires `YYYY-MM-DD`. Exact day is not recoverable from the archived sources, so owner must supply it.
