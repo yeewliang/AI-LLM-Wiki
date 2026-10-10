@@ -645,3 +645,13 @@
   - Frontmatter: all required fields present on every page.
   - Flagged, not changed (stale): 16 entity pages with `updated:` >90 days old, as in prior audits. `raw/` has no unprocessed sources, so no new material exists to justify refreshing them. Dates left unchanged per policy.
   - Flagged, not changed (schema): `date:` is month-only (`2026-04`) in [[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], and [[2026-04-designer-llm-wiki]]. Schema requires `YYYY-MM-DD`. Exact day is not recoverable from the archived sources, so owner must supply it.
+
+## 2026-10-11 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
+- **Broken wikilinks:** none. Scan excluded backticked syntax examples (`[[page-name]]` in [[obsidian]]; `[[wiki/index.md]]`/`[[wiki/log.md]]` in log.md).
+- **Missing from index:** none. All 48 content pages listed; no index entries point to missing pages. `Pages: 48` correct.
+- **Orphans:** none. Every content page has ≥1 inbound wikilink from another content page.
+- **Missing frontmatter:** none. Required fields for each page type present; all pages in their type directory.
+- **Flagged, not changed (stale):** 16 of 16 entity pages still over the 90-day cutoff (2026-07-13). 14 pages last updated 2026-05-02/03 (161–162 days); [[martin-fowler]] and [[ryan-lopopolo]] updated 2026-06-13 (120 days). `raw/` inbox is empty, so no new source material exists to justify a refresh. Dates left unchanged per policy.
+- **Flagged, not changed (schema):** `date:` is month-only (`2026-04`) in [[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], and [[2026-04-designer-llm-wiki]]. Schema requires `YYYY-MM-DD`. Owner must supply the exact day.
+- **Fixed:** nothing. No structural issues found. Index header unchanged (`Pages: 48`, last-updated 2026-06-22).
