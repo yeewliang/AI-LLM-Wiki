@@ -1,5 +1,10 @@
 # Operation Log
 
+## 2026-10-19 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources found.
+- `raw/assets/` holds 3 PNG figures already referenced by the archived source `raw/archive/2026-05-03-從-vibe-coding-到-harness-engineering：ai-時代工程師的下一個升級.md`. Not sources, so left in place.
+- **Created / Updated / Archived:** none
+
 ## 2026-10-09 (lint)
 - **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources)
 - **Broken wikilinks:** none (backticked `[[page-name]]` syntax example in [[obsidian]] excluded)
