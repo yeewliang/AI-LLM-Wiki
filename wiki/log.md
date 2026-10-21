@@ -775,3 +775,13 @@
 - **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources found.
 - `raw/assets/` still holds only the 3 PNG figures referenced by an archived source. Not sources, so left in place.
 - **Created / Updated / Archived:** none
+
+## 2026-10-22 (lint)
+- **Audited:** entire `wiki/` (48 pages: 19 concepts, 16 entities, 1 synthesis, 12 sources). No content changes since the 2026-10-21 audit.
+- **Broken wikilinks:** none. Backticked syntax examples excluded.
+- **Missing from index:** none. All 48 pages listed; no dangling index entries. `Pages: 48` correct.
+- **Orphans:** none.
+- **Missing frontmatter:** none.
+- **Flagged, not changed (stale):** 16 of 16 entity pages are past the 90-day cutoff (2026-07-24). 14 were last updated 2026-05-02/03 (172–173 days). [[martin-fowler]] and [[ryan-lopopolo]] were last updated 2026-06-13 (131 days). `raw/` inbox is empty, so dates were left unchanged per policy.
+- **Flagged, not changed (schema):** `date:` is month-only (`2026-04`) in [[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], and [[2026-04-designer-llm-wiki]]. The owner must supply the exact day.
+- **Fixed:** nothing. No structural issues found.
