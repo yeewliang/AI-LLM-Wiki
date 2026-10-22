@@ -796,3 +796,9 @@
 - **Broken wikilinks:** none. **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days); 3 source pages have month-only `date:`. Owner input needed.
 - **Fixed:** nothing.
+
+## 2026-10-23 (lint, re-run)
+- **Audited:** entire `wiki/` (48 pages). No content changes since the earlier 2026-10-23 audit.
+- **Broken wikilinks:** none. **Missing from index:** none (`Pages: 48` correct). **Orphans:** none. **Missing frontmatter:** none.
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-07-25); 3 source pages have month-only `date:`. Owner input needed.
+- **Fixed:** nothing.
