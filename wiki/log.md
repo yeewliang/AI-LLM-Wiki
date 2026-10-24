@@ -813,3 +813,8 @@
 - **Broken wikilinks:** none. **Missing from index:** none (`Pages: 48` correct, no dangling entries). **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-07-26); 3 source pages have month-only `date:`. Owner input needed.
 - **Fixed:** nothing.
+
+## 2026-10-25 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources found.
+- `raw/assets/` still holds only the 3 PNG figures referenced by an archived source. Not sources, so left in place.
+- **Created / Updated / Archived:** none
