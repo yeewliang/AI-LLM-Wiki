@@ -835,3 +835,8 @@
 - **Broken wikilinks:** none (`[[page-name]]` in [[obsidian]] is an inline-code syntax example, not a link). **Missing from index:** none (`Pages: 48` correct). **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-07-28); 3 source pages have month-only `date:` ([[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], [[2026-04-designer-llm-wiki]]). Owner input needed.
 - **Fixed:** nothing.
+
+## 2026-10-27 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources found.
+- `raw/assets/` still holds only the 3 PNG figures referenced by an archived source. Not sources, so left in place.
+- **Created / Updated / Archived:** none
