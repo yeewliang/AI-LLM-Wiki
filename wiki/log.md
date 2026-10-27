@@ -857,3 +857,9 @@
 - **Broken wikilinks:** none (`[[page-name]]` style hits are inline syntax examples in log/obsidian). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none (source pages use `date:`).
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days); 3 source pages have month-only `date:`. Owner input needed.
 - **Fixed:** nothing.
+
+## 2026-10-28 (lint, manual re-run)
+- **Audited:** entire `wiki/` (48 pages). Results match this morning's audit.
+- **Broken wikilinks:** none. **Missing from index:** none (`Pages: 48` correct). **Orphans:** none. **Missing frontmatter:** none (the `ingested:` flags on [[2026-05-harness-engineering-next-upgrade]] and [[2026-05-karpathy-llm-wiki-future]] are again the empty-`url:` regex artefact; field present).
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-07-30); 3 source pages have month-only `date:` ([[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], [[2026-04-designer-llm-wiki]]). Owner input needed.
+- **Fixed:** nothing.
