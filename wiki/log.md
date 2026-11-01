@@ -863,3 +863,24 @@
 - **Broken wikilinks:** none. **Missing from index:** none (`Pages: 48` correct). **Orphans:** none. **Missing frontmatter:** none (the `ingested:` flags on [[2026-05-harness-engineering-next-upgrade]] and [[2026-05-karpathy-llm-wiki-future]] are again the empty-`url:` regex artefact; field present).
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-07-30); 3 source pages have month-only `date:` ([[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]], [[2026-04-designer-llm-wiki]]). Owner input needed.
 - **Fixed:** nothing.
+
+## 2026-10-27 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources found; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
+
+## 2026-10-27 (lint)
+- **Audited:** entire `wiki/`. Broken wikilinks: none (`[[page-name]]` in obsidian is a syntax example). Missing from index: none. Orphans: none.
+- **Fixed:** nothing.
+
+## 2026-10-29 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
+
+## 2026-10-29 (lint)
+- **Audited:** entire `wiki/`. Broken wikilinks: none (`[[page-name]]` and similar in log/obsidian are syntax examples). Missing from index: none. Orphans: none. Missing frontmatter: none.
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days); 3 source pages with month-only `date:` (unchanged since 2026-10-28).
+- **Fixed:** nothing.
+
+## 2026-11-02 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
