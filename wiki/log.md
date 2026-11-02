@@ -890,3 +890,7 @@
 - **Broken wikilinks:** none (`[[page-name]]`/`[[...]]` hits in log and [[obsidian]] are inline syntax examples). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-04). The fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
 - **Fixed:** nothing.
+
+## 2026-11-03 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
