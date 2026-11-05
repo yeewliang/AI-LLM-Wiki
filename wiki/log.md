@@ -920,3 +920,17 @@
 - **Broken wikilinks:** none (`[[page-name]]`/`[[...]]` hits in log and [[obsidian]] are inline syntax examples). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none (`ingested:` flags on [[2026-05-harness-engineering-next-upgrade]] and [[2026-05-karpathy-llm-wiki-future]] are the known empty-`url:` regex artefact; field present).
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-07). The fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
 - **Fixed:** nothing.
+
+## 2026-11-04 (ingest, scheduled rerun)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
+
+## 2026-11-04 (lint, scheduled rerun)
+- **Audited:** entire `wiki/` (48 pages; index `Pages: 48` correct).
+- **Broken wikilinks:** none (`[[page-name]]` in [[obsidian]] is an inline syntax example). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days). Fix is `/ingest` or `/update` with new sources. `raw/` inbox still empty.
+- **Fixed:** nothing.
+
+## 2026-11-06 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
