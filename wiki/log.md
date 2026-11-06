@@ -944,3 +944,9 @@
 ## 2026-11-07 (ingest)
 - **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
 - **Created / Updated / Archived:** none
+
+## 2026-11-07 (lint)
+- **Audited:** entire `wiki/` (48 pages; index `Pages: 48` correct).
+- **Broken wikilinks:** none (backticked `[[...]]` syntax examples in [[obsidian]] and log.md excluded). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-09). The fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
+- **Fixed:** nothing.
