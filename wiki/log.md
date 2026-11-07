@@ -959,3 +959,7 @@
 - **Audited:** entire `wiki/` (50 files incl. index and log). **Broken wikilinks:** none. **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days). Fix is `/ingest` or `/update` with new sources. `raw/` inbox still empty.
 - **Fixed:** nothing.
+
+## 2026-11-08 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
