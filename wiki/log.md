@@ -969,3 +969,7 @@
 - **Broken wikilinks:** none (`[[page-name]]` in [[obsidian]] is a backticked syntax example). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none (`ingested:` present on both sources; checker flag was the empty-`url:` regex artefact).
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-10). Fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
 - **Fixed:** nothing.
+
+## 2026-11-09 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
