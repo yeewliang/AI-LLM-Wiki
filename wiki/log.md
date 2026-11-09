@@ -979,3 +979,7 @@
 - **Broken wikilinks:** none (backticked syntax examples excluded). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none.
 - **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-11). Fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
 - **Fixed:** nothing in `wiki/`. Added portfolio image `docs/screenshot.png`.
+
+## 2026-11-10 (ingest)
+- **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
+- **Created / Updated / Archived:** none
