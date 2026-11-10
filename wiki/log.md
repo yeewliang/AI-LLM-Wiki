@@ -994,3 +994,10 @@
 ## 2026-11-11 (ingest)
 - **Scanned:** `raw/` (excluding `raw/archive/`). No unprocessed sources; only the 3 PNG figures in `raw/assets/`.
 - **Created / Updated / Archived:** none
+
+## 2026-11-11 (lint)
+- **Audited:** entire `wiki/` (48 pages plus index and log; index `Pages: 48` correct).
+- **Broken wikilinks:** none (backticked syntax examples excluded). **Missing from index:** none. **Orphans:** none. **Missing frontmatter:** none (`ingested:` present on both sources with empty `url:`; checker flag was the regex artefact).
+- **Flagged, not changed:** 16 of 16 entity pages stale (>90 days, cutoff 2026-08-13). Fix is `/ingest` or `/update` with new sources, not bumping dates. `raw/` inbox still empty.
+- **Flagged, not changed:** 3 source pages still carry month-only `date: 2026-04`: [[2026-04-designer-llm-wiki]], [[2026-04-karpathy-second-brain-explained]], [[kosuri-2026-llm-wiki-build]]. Exact day not guessed.
+- **Fixed:** nothing.
